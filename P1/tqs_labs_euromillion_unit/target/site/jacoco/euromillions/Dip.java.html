@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Dip.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">euromillions-play</a> &gt; <a href="index.source.html" class="el_package">euromillions</a> &gt; <span class="el_source">Dip.java</span></div><h1>Dip.java</h1><pre class="source lang-java linenums">package euromillions;
+
+import java.util.Objects;
+
+import sets.SetOfNaturals;
+
+import java.util.Random;
+
+/**
+ * A set of 5 numbers and 2 starts according to the Euromillions ranges.
+ *
+ * @author ico0
+ */
+public class Dip {
+    final static int MAXNUMBERS = 5;
+    final static int MAXSTARS = 2;
+
+    final static int NUMBERSLIMIT = 49;
+    final static int STARSLIMIT = 9;
+
+    private SetOfNaturals numbers;
+    private SetOfNaturals starts;
+
+<span class="fc" id="L24">    public Dip() {</span>
+<span class="fc" id="L25">        numbers = new SetOfNaturals();</span>
+<span class="fc" id="L26">        starts = new SetOfNaturals();</span>
+<span class="fc" id="L27">    }</span>
+
+    public Dip(int[] arrayOfNumbers, int[] arrayOfStarts) {
+<span class="fc" id="L30">        this();</span>
+
+<span class="pc bpc" id="L32" title="1 of 4 branches missed.">        if (MAXNUMBERS == arrayOfNumbers.length &amp;&amp; MAXSTARS == arrayOfStarts.length) {</span>
+<span class="fc" id="L33">            numbers.add(arrayOfNumbers);</span>
+<span class="fc" id="L34">            starts.add(arrayOfStarts);</span>
+        } else {
+<span class="fc" id="L36">            throw new IllegalArgumentException(&quot;wrong number of elements in numbers/stars&quot;);</span>
+        }
+
+<span class="fc" id="L39">    }</span>
+
+    public SetOfNaturals getNumbersColl() {
+<span class="fc" id="L42">        return numbers;</span>
+    }
+
+    public SetOfNaturals getStarsColl() {
+<span class="fc" id="L46">        return starts;</span>
+    }
+
+    public static Dip generateRandomDip() {
+<span class="fc" id="L50">        Random generator = new Random();</span>
+
+<span class="fc" id="L52">        Dip randomDip = new Dip();</span>
+<span class="fc bfc" id="L53" title="All 2 branches covered.">        for (int i = 0; i &lt; MAXNUMBERS; ) {</span>
+<span class="fc" id="L54">            int candidate = generator.nextInt(NUMBERSLIMIT) + 1;</span>
+<span class="pc bpc" id="L55" title="1 of 2 branches missed.">            if (!randomDip.getNumbersColl().contains(candidate)) {</span>
+<span class="fc" id="L56">                randomDip.getNumbersColl().add(candidate);</span>
+<span class="fc" id="L57">                i++;</span>
+            }
+<span class="fc" id="L59">        }</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        for (int i = 0; i &lt; MAXSTARS; ) {</span>
+<span class="fc" id="L61">            int candidate = generator.nextInt(STARSLIMIT) + 1;</span>
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">            if (!randomDip.getStarsColl().contains(candidate)) {</span>
+<span class="fc" id="L63">                randomDip.getStarsColl().add(candidate);</span>
+<span class="fc" id="L64">                i++;</span>
+            }
+<span class="fc" id="L66">        }</span>
+<span class="fc" id="L67">        return randomDip;</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="nc" id="L72">        int hash = 3;</span>
+<span class="nc" id="L73">        hash = 29 * hash + Objects.hashCode(this.numbers);</span>
+<span class="nc" id="L74">        hash = 29 * hash + Objects.hashCode(this.starts);</span>
+<span class="nc" id="L75">        return hash;</span>
+    }
+
+
+    @Override
+    public boolean equals(Object obj) {
+<span class="pc bpc" id="L81" title="1 of 2 branches missed.">        if (this == obj) {</span>
+<span class="nc" id="L82">            return true;</span>
+        }
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">        if (obj == null) {</span>
+<span class="nc" id="L85">            return false;</span>
+        }
+<span class="pc bpc" id="L87" title="1 of 2 branches missed.">        if (getClass() != obj.getClass()) {</span>
+<span class="nc" id="L88">            return false;</span>
+        }
+<span class="fc" id="L90">        final Dip other = (Dip) obj;</span>
+<span class="pc bpc" id="L91" title="1 of 2 branches missed.">        if (!Objects.equals(this.numbers, other.numbers)) {</span>
+<span class="nc" id="L92">            return false;</span>
+        }
+<span class="fc" id="L94">        return Objects.equals(this.starts, other.starts);</span>
+    }
+
+
+    /**
+     * prepares a string representation of the data structure, formated for
+     * printing
+     *
+     * @return formatted string with data
+     */
+    public String format() {
+<span class="fc" id="L105">        StringBuilder sb = new StringBuilder();</span>
+<span class="fc" id="L106">        sb.append(&quot;N[&quot;);</span>
+<span class="fc bfc" id="L107" title="All 2 branches covered.">        for (int number : getNumbersColl()) {</span>
+<span class="fc" id="L108">            sb.append(String.format(&quot;%3d&quot;, number));</span>
+<span class="fc" id="L109">        }</span>
+<span class="fc" id="L110">        sb.append(&quot;] S[&quot;);</span>
+<span class="fc bfc" id="L111" title="All 2 branches covered.">        for (int star : getStarsColl()) {</span>
+<span class="fc" id="L112">            sb.append(String.format(&quot;%3d&quot;, star));</span>
+<span class="fc" id="L113">        }</span>
+<span class="fc" id="L114">        sb.append(&quot;]&quot;);</span>
+<span class="fc" id="L115">        return sb.toString();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

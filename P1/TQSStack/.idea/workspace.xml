@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4bcad67-9df8-4f79-8ce5-79e0e799e68f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XkZhhoqWETLCuq2zkGOFjTwdaR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tqsua.lab1stack" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TqsSimpleStackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TQSStack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tqsua.lab1stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tqsua.lab1stack" />
+      <option name="MAIN_CLASS_NAME" value="tqsua.lab1stack.TqsSimpleStackTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TqsSimpleStackTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4bcad67-9df8-4f79-8ce5-79e0e799e68f" name="Default Changelist" comment="" />
+      <created>1581592173225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581592173225</updated>
+      <workItem from="1581592174636" duration="5589000" />
+      <workItem from="1581605047562" duration="128000" />
+      <workItem from="1581608554817" duration="580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="254" key="GridCell.Tab.0.bottom" timestamp="1581609449511">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state width="1878" height="254" key="GridCell.Tab.0.bottom/0.32.1920.984@0.32.1920.984" timestamp="1581609449511" />
+    <state width="1878" height="254" key="GridCell.Tab.0.center" timestamp="1581609449510">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state width="1878" height="254" key="GridCell.Tab.0.center/0.32.1920.984@0.32.1920.984" timestamp="1581609449510" />
+    <state width="1878" height="254" key="GridCell.Tab.0.left" timestamp="1581609449510">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state width="1878" height="254" key="GridCell.Tab.0.left/0.32.1920.984@0.32.1920.984" timestamp="1581609449510" />
+    <state width="1878" height="254" key="GridCell.Tab.0.right" timestamp="1581609449510">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state width="1878" height="254" key="GridCell.Tab.0.right/0.32.1920.984@0.32.1920.984" timestamp="1581609449510" />
+    <state width="918" height="314" key="GridCell.Tab.1.bottom" timestamp="1581604238210">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state width="918" height="314" key="GridCell.Tab.1.bottom/0.32.1920.984@0.32.1920.984" timestamp="1581604238210" />
+    <state width="918" height="314" key="GridCell.Tab.1.center" timestamp="1581604238209">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state width="918" height="314" key="GridCell.Tab.1.center/0.32.1920.984@0.32.1920.984" timestamp="1581604238209" />
+    <state width="918" height="314" key="GridCell.Tab.1.left" timestamp="1581604238207">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state width="918" height="314" key="GridCell.Tab.1.left/0.32.1920.984@0.32.1920.984" timestamp="1581604238207" />
+    <state width="918" height="314" key="GridCell.Tab.1.right" timestamp="1581604238209">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state width="918" height="314" key="GridCell.Tab.1.right/0.32.1920.984@0.32.1920.984" timestamp="1581604238209" />
+    <state x="1214" y="238" width="442" height="577" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581594433606">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state x="1214" y="238" width="442" height="577" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.32.1920.984@0.32.1920.984" timestamp="1581594433606" />
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1581602980835">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup/0.32.1920.984@0.32.1920.984" timestamp="1581602980835" />
+  </component>
+</project>
