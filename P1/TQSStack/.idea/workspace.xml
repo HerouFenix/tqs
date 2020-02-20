@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4bcad67-9df8-4f79-8ce5-79e0e799e68f" name="Default Changelist" comment="" />
+    <list default="true" id="e4bcad67-9df8-4f79-8ce5-79e0e799e68f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +17,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1XkZhhoqWETLCuq2zkGOFjTwdaR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -71,6 +77,7 @@
       <workItem from="1581592174636" duration="5589000" />
       <workItem from="1581605047562" duration="128000" />
       <workItem from="1581608554817" duration="580000" />
+      <workItem from="1582208193938" duration="20000" />
     </task>
     <servers />
   </component>
@@ -110,6 +117,10 @@
       <screen x="0" y="32" width="1920" height="984" />
     </state>
     <state width="918" height="314" key="GridCell.Tab.1.right/0.32.1920.984@0.32.1920.984" timestamp="1581604238209" />
+    <state x="639" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1582208196691">
+      <screen x="0" y="32" width="1920" height="984" />
+    </state>
+    <state x="639" y="351" key="com.intellij.ide.util.TipDialog/0.32.1920.984@0.32.1920.984" timestamp="1582208196691" />
     <state x="1214" y="238" width="442" height="577" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581594433606">
       <screen x="0" y="32" width="1920" height="984" />
     </state>
